@@ -1,0 +1,31 @@
+.banner {
+  background-color: #32CD32; /*verde limão */
+  color: white;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content:left;
+
+}
+
+.hidden-section {
+  display: none; /* Oculta a seção inicialmente */
+}
+
+.hidden-oculto{
+  display: none;
+}
+
+.header img {
+  margin-right: 10px; /* Espaçamento entre a logo e o título */
+  width: 10%;
+}
+
+.nav-link{
+  display: flex;
+  font-size: 20px;
+  justify-content:right;
+}

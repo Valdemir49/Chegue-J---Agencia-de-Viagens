@@ -1,0 +1,16 @@
+class="navbar": Esta classe do Bootstrap aplica os estilos básicos de navbar.
+
+navbar-expand-lg: Esta classe faz com que a navbar seja expansível em telas grandes (largura ≥ 992px). Em telas menores, a navbar será colapsada em um botão de menu.
+
+navbar-light: Esta classe aplica um esquema de cores claro à navbar, ideal para fundos claros.
+
+bg-light: Esta classe aplica uma cor de fundo clara à navbar.
+
+A tag <span class="navbar-toggler-icon"></span> é usada no Bootstrap para criar o ícone de alternância (toggle) da barra de navegação (navbar) em dispositivos móveis. Quando a navbar é colapsada em telas menores, esse ícone aparece e permite que os usuários expandam ou colapsem o menu de navegação.
+
+background-size: cover; no CSS é usada para redimensionar a imagem de fundo de um elemento de forma que ela cubra completamente o contêiner, mantendo a proporção da imagem. Isso significa que a imagem de fundo será redimensionada para garantir que toda a área do contêiner seja coberta, mesmo que parte da imagem seja cortada para manter a proporção.
+
+#js para ocultar mais viagens#
+A classe .hidden-section é usada para ocultar a seção inicialmente (display: none). O botão "Veja Mais" tem um evento onclick que chama a função toggleSection(). A função toggleSection() alterna a visibilidade da seção oculta, exibindo-a quando o botão é clicado e ocultando-a novamente se o botão for clicado novamente.
+
+a classe d-flex justify-content-center é usada para centralizar o botão dentro do contêiner.
