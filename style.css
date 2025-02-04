@@ -11,6 +11,25 @@
 
 }
 
+.text-center{
+  font-size: 26px;
+  justify-content: center;
+}
+
+.card img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.card-title{
+  font-size: 18px;
+  display: flex;
+  justify-content: left;
+}
+
 .hidden-section {
   display: none; /* Oculta a seção inicialmente */
 }

@@ -54,15 +54,15 @@
         <form>
             <div class="form-group">
                 <label for="nome">Nome</label>
-                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
             </div>
             <div class="form-group">
                 <label for="telefone">Telefone</label>
-                <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone">
+                <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone" required>
             </div>
             <div class="form-group">
                 <label for="tipo-destino">Tipo de Destino</label>
@@ -96,7 +96,47 @@
             </div>
             <div class="form-group">
                 <label for="data">Data da Viagem</label>
-                <input type="date" class="form-control" id="data">
+                <input type="date" class="form-control" id="data" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="forma-de-pagamento">Forma de Pagamento</label>
+                <select class="form-control" id="tipo-pagamento" onchange="formaPagamento()">
+                    <option value="">Selecionar</option>
+                    <option value="credito">Cartão de Credito</option>
+                    <option value="pix">Pix</option>
+                </select>
+                
+           <div class="form-group hidden-oculto" id="Pagamento-pix">
+               <div class="form-group">
+                
+                   <h5>Pagar por link:</h5>
+                    <p class="form-group">Chave Pix da Empresa:</p>
+                    <p id="chavePix">chave-pix-da-empresa@recode.com</p>
+                    <button type="button" onclick="copiarChave()">Copiar Chave Pix</button>
+
+                    <h5>QR Code para Pagamento:</h5>
+                    <img src="imagens/qr_code.jpeg" alt="QR Code para Pagamento" width="200" height="200">
+               </div> 
+
+            </div>
+
+            <div class="form-group hidden-oculto" id="Pagamento-cartão">
+               <label for="cardNumber">Númeto do Cartão</label>
+               <input type="text" class="form-control" name="cardNumber" required>
+
+                <label for="cardName">Nome do Titular:</label>
+                <input type="text" class="form-control" name="cardName" required>
+                
+                <label for="expiryDate">Data de Validade (MM/AA):</label>
+                <input type="date" class="form-control" name="expiryDate" required>
+                
+                <label for="cvv">Código de Segurança (CVV):</label>
+                <input type="text" class="form-control" name="cvv" required>
+            </div>
+
+
             </div>
             <div class="form-group">
                 <label for="mensagem">Mensagem</label>

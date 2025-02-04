@@ -1,3 +1,10 @@
+Uma agência de viagens é uma empresa que oferece serviços relacionados ao planejamento e organização de viagens. Esses serviços podem incluir a venda de passagens aéreas, reservas de hotéis, pacotes turísticos, aluguel de carros, seguros de viagem e muito mais. As agências de viagens atuam como intermediárias entre os viajantes e os fornecedores de serviços turísticos, ajudando a simplificar o processo de planejamento e garantindo que os clientes tenham uma experiência de viagem tranquila e agradável.
+
+As agências de viagens podem ser físicas, com escritórios onde os clientes podem visitar e conversar com agentes de viagens, ou online, permitindo que os clientes planejem e reservem suas viagens pela internet. Algumas agências de viagens também oferecem serviços personalizados, como roteiros sob medida e assistência durante a viagem.
+
+
+---------------------------------------------------------------------------
+
 class="navbar": Esta classe do Bootstrap aplica os estilos básicos de navbar.
 
 navbar-expand-lg: Esta classe faz com que a navbar seja expansível em telas grandes (largura ≥ 992px). Em telas menores, a navbar será colapsada em um botão de menu.
