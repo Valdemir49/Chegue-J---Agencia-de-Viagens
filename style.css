@@ -1,14 +1,31 @@
-.banner {
-  background-color: #32CD32; /*verde limão */
-  color: white;
-  background-size: cover;
-}
-
 .header {
   display: flex;
   align-items: center;
   justify-content:left;
+}
 
+.header img {
+  margin-right: 10px; /* Espaçamento entre a logo e o título */
+  width: 15%;
+}
+
+.logo-bacground{
+  background-color: #32CD32;
+}
+
+.logo-text {
+  font-family: 'Lobster', cursive;
+}
+
+.lead{
+  font-style: italic;
+  font-size: 18px;
+}
+
+.banner {
+  background-color: #32CD32; /*verde limão */
+  color: white;
+  background-size: cover;
 }
 
 .text-center{
@@ -22,7 +39,6 @@
   justify-content: center;
   width: 100%;
 }
-
 
 .card-title{
   font-size: 18px;
@@ -38,19 +54,10 @@
   display: none;
 }
 
-.header img {
-  margin-right: 10px; /* Espaçamento entre a logo e o título */
-  width: 10%;
-}
-
 .nav-link{
   display: flex;
   font-size: 20px;
   justify-content:right;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #00ff00; /* Substitua pela cor que deseja ao passar o mouse */
 }
 
 .qr-code{
@@ -58,12 +65,8 @@
   align-items: center;
   justify-content: center;
   width: 30%;
-
 }
 
 .footer-text{
   font-size: 16px;
-}
-.logo-bacground{
-  background-color: #32CD32;
 }
