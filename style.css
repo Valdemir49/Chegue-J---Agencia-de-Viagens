@@ -48,3 +48,22 @@
   font-size: 20px;
   justify-content:right;
 }
+
+.navbar-nav .nav-link:hover {
+    color: #00ff00; /* Substitua pela cor que deseja ao passar o mouse */
+}
+
+.qr-code{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+
+}
+
+.footer-text{
+  font-size: 16px;
+}
+.logo-bacground{
+  background-color: #32CD32;
+}

@@ -42,6 +42,17 @@ function formaPagamento() {
     }
 }
 
+function necessidadesEspeciais() {
+    var necessidades = document.getElementById('necessidade-especial').value;
+    var especialSim = document.getElementById('necessidades-especiais');
+
+    if (necessidades === 'necessidade-especial-sim') {
+        especialSim.classList.remove('hidden-oculto');
+    } else {
+        especialSim.classList.add('hidden-oculto');
+    }
+}
+
 function copiarChave() {
     var chave = document.getElementById("chavePix").innerText;
     navigator.clipboard.writeText(chave).then(function() {

@@ -9,9 +9,9 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <div class="header">
-        <img src="imagens/logo.jpeg" alt="Logo da Agência">
+   <!-- Imagem de Logo -->
+    <div class="header logo-bacground">
+        <img src="imagens/logo-removebg-preview.png" alt="Logo da Agência">
         <h1>Chegue Já</h1>
     </div>
 
@@ -52,20 +52,50 @@
     <div class="container my-5">
         <h2 class="text-center">Agende rápido sua felicidade</h2>
         <form>
+
+            <!-- Dados Pessoais do Passageiro -->
             <div class="form-group">
                 <label for="nome">Nome</label>
                 <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
             </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="cpf">CPF</label>
+                    <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF" required>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="RG">RG</label>
+                    <input type="text" class="form-control" id="RG" placeholder="Digite seu RG" required>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="orgao-expeditor">Orgão Expeditor</label>
+                    <input type="text" class="form-control" id="orgao-expeditor" placeholder="Orgão Expeditor" required>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="data-de-nascimento">Data de Nascimento</label>
+                    <input type="date" class="form-control" id="data-de-nascimento" placeholder="Digite sua Data de Nascimento" required>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="telefone">Telefone</label>
-                <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone" required>
+
+            <!-- Dados para contato do passageiro -->
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="telefone-1">Telefone 1</label>
+                    <input type="tel" class="form-control" id="telefone-1" placeholder="Digite seu telefone" required>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="telefone-2">Telefone 2</label>
+                    <input type="tel" class="form-control" id="telefone-2" placeholder="Digite seu telefone" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+                </div>  
             </div>
+
+            <!-- Dados do agendamento do passageiro -->
             <div class="form-group">
-                <label for="tipo-destino">Tipo de Destino</label>
+                <label for="tipo-destino">Qual o Destino</label>
                 <select class="form-control" id="tipo-destino" onchange="mostrarDestinos()">
                     <option value="">Selecione o tipo de destino</option>
                     <option value="nacional">Nacional</option>
@@ -81,6 +111,11 @@
                     <option value="salvador">Salvador</option>
                     <option value="recife">Recife</option>
                     <option value="fortaleza">Fortaleza</option>
+                    <option value="belo-horizonte">Belo Horizonte</option>
+                    <option value="brasilia">Brasilia</option>
+                    <option value="campinas">Campinas</option>
+                    <option value="curitiba">Curitiba</option>
+                    <option value="manaus">Manaus</option>
                 </select>
             </div>
             <div class="form-group hidden-oculto" id="destinos-internacionais">
@@ -90,16 +125,49 @@
                     <option value="nova-york">Nova York</option>
                     <option value="paris">Paris</option>
                     <option value="londres">Londres</option>
-                    <option value="tokyo">Tóquio</option>
+                    <option value="toquio">Tóquio</option>
                     <option value="sydney">Sydney</option>
+                    <option value="kyoto">Kyoto</option>
+                    <option value="roma">Roma</option>
+                    <option value="cairo">Cairo</option>
+                    <option value="bangkok">Bangkok</option>
+                    <option value="istambul">Istambul</option>
+                    <option value="barcelona">Barcelona</option>
                 </select>
             </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="data">Data da Viagem</label>
+                    <input type="date" class="form-control" id="data" required>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="pref-assento">Preferencia de Assento</label>
+                    <select class="form-control" id="pref-assento">
+                        <option value="sem-preferencia">Sem preferncia</option>
+                        <option value="pref-janela">Janela (adcional de 5%)</option>
+                        <option value="pref-corredor">Corredor (adcional de 2%)</option>
+                    </select>
+                </div>
+            </div>
+
             <div class="form-group">
-                <label for="data">Data da Viagem</label>
-                <input type="date" class="form-control" id="data" required>
+                <label for="necessidade-especial">Necessidades Especiais ?</label>
+                <select class="form-control" id="necessidade-especial" onchange="necessidadesEspeciais()" required>
+                    <option value="necessidade-especial-não">Não</option>
+                    <option value="necessidade-especial-sim">Sim</option>
+                </select>
+            </div>
+
+            <div class="form-group hidden-oculto" id="necessidades-especiais">
+                <label for="text-necessidade">Qual sua necessidade ?</label>
+                <textarea class="form-control" id="sua-necissidade" rows="3" placeholder="Informe sua necessidade:" required></textarea>
             </div>
 
 
+
+
+            <!-- Dados do agendamento do passageiro -->
             <div class="form-group">
                 <label for="forma-de-pagamento">Forma de Pagamento</label>
                 <select class="form-control" id="tipo-pagamento" onchange="formaPagamento()">
@@ -117,7 +185,7 @@
                     <button type="button" onclick="copiarChave()">Copiar Chave Pix</button>
 
                     <h5>QR Code para Pagamento:</h5>
-                    <img src="imagens/qr_code.jpeg" alt="QR Code para Pagamento" width="200" height="200">
+                    <img class="form-group" src="imagens/qr_code.jpeg" alt="QR Code para Pagamento">
                </div> 
 
             </div>
